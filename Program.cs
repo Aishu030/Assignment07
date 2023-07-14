@@ -11,39 +11,55 @@ namespace Assignment07
     {
         static void Main(string[] args)
         {
-                //DAY05
-                //ASSIGNMENT 07
-                // Creating an ArrayList
-                ArrayList myList = new ArrayList();
-                myList.Add("apple");
-                myList.Add("banana");
-                myList.Add("cherry");
-                myList.Add("date");
-                myList.Add("elderberry");
+            //DAY05
+            //ASSIGNMENT 07
+            // Creating an ArrayList
+            // Create an ArrayList and add elements to it
+            ArrayList arrayList = new ArrayList();
+            arrayList.Add("apple");
+            arrayList.Add("banana");
+            arrayList.Add("cherry");
+            arrayList.Add("date");
+            arrayList.Add("elderberry");
 
-                // Print total no. of elements
-                Console.WriteLine("Total number of elements in the ArrayList: {0}", myList.Count);
+            // Print the total no of elements 
+            Console.WriteLine("Total number of elements: " + arrayList.Count);
+            Console.WriteLine();
 
-                // Check if the ArrayList contains the element "date" and print the result....
-                bool containsDate =myList.Contains("date");
-                Console.WriteLine("ArrayList contains 'date': {0}", containsDate);
+            // prompt user
+            Console.Write("Enter an element to check if the arraylist contains it: ");
+            string elementToCheck = Console.ReadLine();
 
-                // Insert the element "fig" at the second position in the ArrayList...
-                myList.Insert(1, "fig");
+            // Check the ArrayList 
+            bool containsElement = arrayList.Contains(elementToCheck);
+            Console.WriteLine("Does the ArrayList contain '{0}'? {1}", elementToCheck, containsElement);
+            Console.WriteLine();
 
-                // Remove the element "banana" from the ArrayList.....
-                myList.Remove("banana");
+            Console.Write("Enter an element to insert in the ArrayList: ");
+            string elementToInsert = Console.ReadLine();
+            Console.Write("Enter the position to insert the element (0 - {0}): ", arrayList.Count);
+            int positionToInsert = int.Parse(Console.ReadLine());
 
-                // Print all the elements in the ArrayList using a loop......
-                Console.WriteLine("Elements in the ArrayList:");
-                foreach (var fruit in myList)
-                {
-                    Console.WriteLine(fruit);
-                }
-                Console.ReadKey();  
+            arrayList.Insert(positionToInsert, elementToInsert);
+
+            // Prompt the user to enter an element to remove from the ArrayList
+            Console.Write("Enter an element to remove from the ArrayList: ");
+            string elementToRemove = Console.ReadLine();
+
+            // Remove the user-entered element from the ArrayList
+            arrayList.Remove(elementToRemove);
+
+            // Print all the elements
+            Console.WriteLine("\nElements in the ArrayList:");
+            foreach (var fruit in arrayList)
+            {
+                Console.WriteLine(fruit);
             }
-        }
 
+            Console.ReadLine();
+        }
     }
+
+}
 
 
