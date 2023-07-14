@@ -1,0 +1,8 @@
+D:\mpahsis\day5\Assignment07\Assignment07\bin\Debug\Assignment07.exe.config
+D:\mpahsis\day5\Assignment07\Assignment07\bin\Debug\Assignment07.exe
+D:\mpahsis\day5\Assignment07\Assignment07\bin\Debug\Assignment07.pdb
+D:\mpahsis\day5\Assignment07\Assignment07\obj\Debug\Assignment07.csproj.AssemblyReference.cache
+D:\mpahsis\day5\Assignment07\Assignment07\obj\Debug\Assignment07.csproj.SuggestedBindingRedirects.cache
+D:\mpahsis\day5\Assignment07\Assignment07\obj\Debug\Assignment07.csproj.CoreCompileInputs.cache
+D:\mpahsis\day5\Assignment07\Assignment07\obj\Debug\Assignment07.exe
+D:\mpahsis\day5\Assignment07\Assignment07\obj\Debug\Assignment07.pdb
